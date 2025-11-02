@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="Js/Main.js" defer></script>
+
+    <title>HTML - CSS</title>
+</head>
+
+<body onload="Loading()">
+
+    <div id="Home">
+
+
+        <div id="HTML">
+            <h1>What's HTML</h1>
+            <hr>
+            <p>Hypertext Markup Language (HTML) is the standard markup language[a] for documents designed to be
+                displayed in a web browser</p>
+        </div>
+
+        <video src="Videos/Dark_Mode.mp4" preload="auto" muted loop></video>
+
+    </div>
+
+ 
+    <div id="Tags">
+        <h1>Tags</h1>
+        <p>Tags HTML são instruções escritas entre colchetes angulares (&lt; &gt;) que definem a estrutura e o conteúdo de uma página da web, como títulos (&lt;h1&gt;), parágrafos (&lt;p&gt;) e links (&lt;a&gt;). A maioria das tags funciona em pares, com uma tag de abertura (ex: &lt;p&gt;) e uma de fechamento (ex: &lt;/p&gt;), e instruem o navegador sobre como formatar o texto e outros elementos.</p>
+            
+
+            <div id="Content">
+                <div id="ContentTags">
+                <div class="Tag">&lt;html&gt;</div>
+                <div class="Tag">&lt;head&gt;</div>
+                <div class="Tag">&lt;title&gt;</div>
+                <div class="Tag">&lt;meta&gt;</div>
+                <div class="Tag">&lt;body&gt;</div>
+
+                <div class="Tag">&lt;h1&gt;</div>
+                <div class="Tag">&lt;h2&gt;</div>
+                <div class="Tag">&lt;h3&gt;</div>
+                <div class="Tag">&lt;h4&gt;</div>
+                <div class="Tag">&lt;h5&gt;</div>
+                <div class="Tag">&lt;h6&gt;</div>
+                <div class="Tag">&lt;p&gt;</div>
+                <div class="Tag">&lt;a&gt;</div>
+                <div class="Tag">&lt;article&gt;</div>
+                
+                <div class="Tag">&lt;div&gt;</div>
+                <div class="Tag">&lt;span&gt;</div>
+                <div class="Tag">&lt;footer&gt;</div>
+                <div class="Tag">&lt;section&gt;</div>
+
+
+
+
+
+                <div class="Tag">&lt;img&gt;</div>
+                <h2>Exemplo</h2>
+                    <code>
+&lt;h1&gtTags&lt;/h1&gt
+<br>
+&lt;h2&gtOque são as tags (HTML) &lt;/h2&gt
+<br>
+&lt;p&gtTags são instruções escritas ent&lt;/p&gt
+                    </code>
+                
+                </div>
+            </div>
+
+
+
+    </div>
+ 
+
+    </div>
+</body>
+
+<script>
+     
+ const Infos = {
+  pt_br: {
+    "<html>": "Esta tag é o elemento básico da estrutura do HTML. Ela contém todos os outros elementos do documento. Todo arquivo HTML deve começar e terminar com essa tag.",
+    "<head>": "Contém informações sobre o documento, como título, metadados, links para scripts e folhas de estilo.",
+    "<title>": "Define o título da página, exibido na aba do navegador ou nos resultados de busca.",
+    "<meta>": "Fornece metadados sobre o documento, como codificação de caracteres, descrição e palavras-chave.",
+    "<body>": "Contém todo o conteúdo visível da página, como textos, imagens, links e outros elementos.",
+    
+    "<h1>": "Define o título principal da página. Deve ser usado apenas uma vez por página.",
+    "<h2>": "Define um subtítulo ou seção principal dentro do conteúdo. Vem logo abaixo do h1 em hierarquia.",
+    "<h3>": "Usado para subtítulos menores dentro de seções. Segue o h2 na hierarquia.",
+    "<h4>": "Define um nível de título inferior ao h3. Usado para subdivisões.",
+    "<h5>": "Título de nível ainda menor, usado para subdivisões detalhadas.",
+    "<h6>": "O menor nível de título, usado para seções muito específicas.",
+    
+    "<p>": "Cria um parágrafo de texto. É um dos elementos mais usados em documentos HTML.",
+    "<a>": "Cria um link para outra página ou recurso. Pode conter o atributo href com o destino.",
+    "<article>": "Define um conteúdo independente e completo, como um artigo, postagem ou notícia.",
+    
+    "<div>": "Cria uma divisão genérica usada para agrupar outros elementos e aplicar estilos ou scripts.",
+    "<span>": "Usado para agrupar pequenas partes de texto ou elementos inline para estilização específica.",
+    "<footer>": "Representa o rodapé de uma página ou seção, geralmente contendo informações de contato ou direitos autorais.",
+    "<section>": "Define uma seção temática dentro do documento, usada para organizar o conteúdo em blocos lógicos.",
+    
+    "<img>": "Exibe uma imagem na página. Usa o atributo src para indicar o arquivo e alt para texto alternativo."
+  },
+
+  en_us: {
+    "<html>": "This tag is the root element of an HTML document. It contains all other elements. Every HTML file must start and end with this tag.",
+    "<head>": "Contains information about the document, such as title, metadata, and links to scripts or stylesheets.",
+    "<title>": "Defines the page title, displayed in the browser tab or search results.",
+    "<meta>": "Provides metadata about the document, such as character encoding, description, and keywords.",
+    "<body>": "Contains all visible content of the page, such as text, images, links, and other elements.",
+    
+    "<h1>": "Defines the main heading of the page. It should be used only once per page.",
+    "<h2>": "Defines a main section heading, coming right below h1 in hierarchy.",
+    "<h3>": "Defines a subheading inside a section. Comes after h2 in hierarchy.",
+    "<h4>": "Defines a heading lower than h3, used for smaller subsections.",
+    "<h5>": "Represents an even smaller heading level, for detailed subdivisions.",
+    "<h6>": "The smallest heading level, used for very specific sections.",
+    
+    "<p>": "Creates a paragraph of text. One of the most common elements in HTML documents.",
+    "<a>": "Creates a hyperlink to another page or resource. Usually includes the href attribute for the target.",
+    "<article>": "Defines an independent, self-contained piece of content such as an article, post, or news item.",
+    
+    "<div>": "Creates a generic container used to group other elements for styling or scripting.",
+    "<span>": "Used to group small portions of text or inline elements for specific styling.",
+    "<footer>": "Represents the footer of a page or section, typically containing contact info or copyright.",
+    "<section>": "Defines a thematic section within the document, used to organize content into logical blocks.",
+    
+    "<img>": "Displays an image on the page. Uses the src attribute for the file path and alt for alternative text."
+  }
+};
+
+
+    function Loading() {
+        const Video = document.querySelector("video")
+        const Errors = {
+            en_us:{
+            
+                Video:"Video failed, site Re-recharging in 5 seconds"
+            },
+            pt_br:{
+                Video:"Vídeo falhou, site Recarregando em 5 segundos"
+            }
+
+        }
+        const Message = {
+
+            en_us: {
+                HTML: {
+                    h1: "What's HTML",
+                    p: "Hypertext Markup Language (HTML) is the standard markup language[a] for documents designed to be displayed in a web browser"
+                },
+                Tags:{
+                    p:"HTML tags are instructions written in angle brackets (&lt; &gt;) that define the structure and content of a web page, such as headings (&lt;h1&gt;), paragraphs (&lt;p&gt;), and links (&lt;a&gt;). Most tags work in pairs, with an opening tag (ex: &lt;p&gt;) and a closing tag (ex: &lt;/p&gt;), and instruct the browser on how to format text and other elements."
+                }
+            },
+
+
+            pt_br: {
+                HTML: {
+                    h1: "O que é HTML",
+                    p: 'HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa: "Linguagem de Marcação de Hipertexto") é uma linguagem de marcação utilizada na construção de páginas na Web.'
+                },
+
+                Tags:{
+                    p:"Tags HTML são instruções escritas entre colchetes angulares (&lt; &gt;) que definem a estrutura e o conteúdo de uma página da web, como títulos (&lt;h1&gt;), parágrafos (&lt;p&gt;) e links (&lt;a&gt;). A maioria das tags funciona em pares, com uma tag de abertura (ex: &lt;p&gt;) e uma de fechamento (ex: &lt;/p&gt;), e instruem o navegador sobre como formatar o texto e outros elementos."
+                }
+            }
+
+            
+        }
+
+        let Language = localStorage.Language || "pt_br"
+        if (Errors[Language] == undefined || Message[Language] == undefined){
+            localStorage.Language = "pt-br"
+            Language = "pt_br"
+        }
+        Object.keys(Message[Language]).forEach(Id => {
+            Object.keys(Message[Language][Id]).forEach(Element => {
+                document.querySelector(`#${Id} > ${Element}`).innerHTML = Message[Language][Id][Element]
+            })
+        })
+
+        
+        const promise = Video.play()
+        if (promise != undefined){
+            promise.then(()=>{
+                return;
+            }).catch((error=>{
+                alert(Errors[Language].Video)
+                setTimeout(()=>{location.reload()},5000)
+            }))
+        }
+    document.querySelectorAll(".Tag").forEach(e=>{
+    e.addEventListener("click",(Events)=>{
+        alert(Infos[Language][Events.target.innerText])
+    })
+})
+
+    
+    }
+
+
+
+
+
+</script>
+
+
+</html>
