@@ -43,8 +43,11 @@ O **objetivo principal** foi **demonstrar conhecimento em HTML e CSS puros**, co
 - Uso de `display`, `position`, `flex`, `ids` e `classes`
 - Boas práticas de organização e clareza de código
 
-A **responsividade** será trabalhada nos **próximo projeto**,
+> Projetos meus Responsivos
 
+* [Memory game](https://rafaelhenriqu.github.io/Memory-game/)
+
+* [Portfolio](https://rafaelhenriqu.github.io/Portfolio/)
 ---
 
 ## 💡 Sobre o Autor
